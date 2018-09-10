@@ -1,0 +1,38 @@
+{
+  "name": "angular1-businesss-applications-ts_conversion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc -p . -w",
+    "start": "npm run clean-dev && webpack --config webpack.dev.js --watch --profile --progress",
+    "clean-dev": "rimraf dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jezzamondev@bitbucket.org/jezzamondev/pluralsight-angularjs-business-app-kurata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jezzamondev/pluralsight-angularjs-business-app-kurata#readme",
+  "devDependencies": {
+    "@ngtools/webpack": "^6.2.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.2",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@angular/compiler-cli": "^6.1.7",
+    "@types/angular": "^1.6.50",
+    "@types/angular-route": "^1.7.0",
+    "@types/jquery": "^3.3.6",
+    "@types/node": "^10.9.4"
+  }
+}

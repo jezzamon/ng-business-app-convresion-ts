@@ -1,0 +1,27 @@
+<div class="main">
+    <div class="panel-heading" style="font-size:large">
+        {{vm.title}}
+    </div>
+
+    <div class="panel-body">
+        <div class="wizard">
+            <!-- ui-sref-active : add 'active' class if state is active -->
+            <a ui-sref="productEdit.info"
+               ui-sref-active="active">
+                Basic Information
+            </a>
+            <a ui-sref="productEdit.price"
+               ui-sref-active="active">
+                Price Details
+            </a>
+            <a ui-sref="productEdit.tags"
+               ui-sref-active="active">
+                Search Tags
+            </a>
+        </div>
+
+        <!-- nested templates here -->
+        <div ui-view></div>
+    </div>
+
+</div>
